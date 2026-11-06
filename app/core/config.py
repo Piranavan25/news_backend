@@ -8,6 +8,11 @@ class Settings(BaseSettings):
     APP_VERSION: str = "1.0.0"
     DEBUG: bool = False
 
+    SCRAPING_SCHEDULE_MODE: str = "both"
+    SCRAPING_INTERVAL_MINUTES: int = 30
+    SCRAPING_DAILY_TIMES: list[str] = ["06:00", "18:00"]
+    SCRAPING_TIMEZONE: str = "Asia/Colombo"
+
     SUPABASE_URL: str
     SUPABASE_SECRET_KEY: str
 
